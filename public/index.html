@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HW12</title>
+</head>
+
+<body>
+    <form class="form js-form">
+        <label class="form-label">
+            <input type="text" name="url" class="form-input" placeholder="Enter link">
+        </label>
+        <button type="submit" class="button">Add link</button>
+
+        <main class="main">
+            <ul reversed class="js-url-list">
+            </ul>
+        </main>
+</body>
+
+</html>
+<!-- 
+npm start     - заустить в режиме разраб
+npm run build - большинство команд с RUN кроме некоторых по умолчанию. -->
+<!-- ============================
+package.json
+============================ -->
+<!-- {
+  "name": "Name of activity",
+  "version": "1.0.0 etc",
+  "description": "something",
+  "main": "index.js",
+  -----------------------------------------------------
+  Скрипты которые запускаются через консоль NPM
+  ----------------------------------------------------
+  npm start - запуск сервера разработки
+  npm build - запуск сборки файла в продакшн.
+  "scripts": {
+    "start": "webpack-dev-server --mode development --open",
+    "build": "webpack --mode production"
+  },
+  "keywords": [],
+  "author": "Dmitry Kovalchuk",
+  "license": "MIT",
+  -------------------------------------------------------
+  Зависимости разработки
+  -------------------------------------------------------
+  "devDependencies": {
+    "autoprefixer": "^9.0.1",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^0.1.19",
+    "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.9.2",
+    "postcss-loader": "^2.1.6",
+    "sass-loader": "^7.0.3",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.16.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "handlebars": "^4.0.11",
+    "handlebars-loader": "^1.7.0",
+    "normalize.css": "^8.0.0"
+  }
+} -->
