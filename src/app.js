@@ -7,9 +7,7 @@ const listUrl = document.querySelector('.js-url-list');
 const input = document.querySelector('input');
 const formButton = document.querySelector('.button');
 const links = { linkSave: [] };
-console.log('links',links);
 const persisted = storage.get();
-console.log('persisted',persisted);
 
 if (persisted) {
     links.linkSave = persisted;
@@ -34,12 +32,10 @@ formButton.addEventListener('click', handlerSubmit);
 function handlerDel(evt) {
     evt.preventDefault();
     // Делегирование события
-    let listItem = evt.target.parentElement;
-    console.log(event.target);
+    let listItem = evt.target.parentElement;;
     let updateStorage = storage.get().filter((el) => {
         return el != document.querySelector('.link').innerHTML.trim();
     });
-    console.log('updateStorage',updateStorage);
     storage.set(updateStorage);
     listItem.remove();
 }
@@ -55,4 +51,3 @@ function render() {
         }), '');
     listUrl.innerHTML = markup;
 };
-console.log('links.linkSave',links.linkSave);
